@@ -29,7 +29,7 @@ public class MyAspect {
 
         if (val.getCode() == 200) {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("token", "dcbe081737ca454cb3ff0d6eae1cf145");
+            jsonObject.put("token", "xxxxx");//请修改此处的xxxx为您的token
             jsonObject.put("title", "今日校园");
             jsonObject.put("content", JSONObject.toJSON(val));
             jsonObject.put("template", "json");
@@ -45,7 +45,7 @@ public class MyAspect {
         String methodName = point.getSignature().getName();
         List<Object> args = Arrays.asList(point.getArgs());
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("token", "dcbe081737ca454cb3ff0d6eae1cf145");
+        jsonObject.put("token", "xxxxx");//请修改此处的xxxx为您的token
         jsonObject.put("title", "今日校园");
         jsonObject.put("content", JSONObject.toJSON(args.get(1)));
         jsonObject.put("template", "json");
