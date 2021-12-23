@@ -12,7 +12,11 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-
+/*
+    此类使用的推送服务为    推送加 （http://pushplus.hxtrip.com/）
+    您如需使用此服务请到此网站注册并获得的token
+    在下方填入您的token即可获取消息推送服务
+*/
 @Component("MyAspect")
 @Aspect
 public class MyAspect {
